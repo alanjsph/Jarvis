@@ -12,7 +12,7 @@ Facebook::Messenger::Subscriptions.subscribe(access_token: ENV["ACCESS_TOKEN"])
 
 
 def send_to_alan(message)
-  puts "sending message to Alan: :"+ message.to_s
+  puts "Jarvis is up and running, notified Alan."
   Bot.deliver({
     recipient: {
       id: '1108018545987778'
@@ -22,4 +22,4 @@ def send_to_alan(message)
     }
   }, access_token: ENV['ACCESS_TOKEN'])
 end
-send_to_alan("first message")
+send_to_alan("Jarvis is up and running")
